@@ -54,6 +54,35 @@ export default function BuilderSection() {
             Learn More
           </button>
         </div>
+        <div className="w-full h-full flex justify-center py-4 border-image">
+          <div className="bg-[#101827] min-w-3xl h-[57vh] rounded-2xl">
+            <div className="flex justify-between items-center w-full h-10 px-5 py-4">
+              <div className="flex items-center gap-2">
+                <div className="w-2.5 h-2.5 rounded-full bg-[#4b5563]" />
+                <div className="w-2.5 h-2.5 rounded-full bg-[#4b5563]" />
+                <div className="w-2.5 h-2.5 rounded-full bg-[#4b5563]" />
+              </div>
+              <p className="font-inter text-sm text-white">simple.ai</p>
+              <div />
+            </div>
+            <div className="mt-4 px-4">
+              <p className="font-roboto text-sm">
+                npm login{" "}
+                <span className="text-[#6b7280]">
+                  --registry=https://npm.pkg.github.com
+                </span>{" "}
+                <br />
+                <span className="text-[#6b7280]">
+                  --scope=@phanatic Successfully logged-in.
+                </span>{" "}
+                <p className="font-roboto text-sm mt-6">
+                  npm publish <br />
+                  <span className="text-[#6b7280]">Package published.</span>
+                </p>
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );
