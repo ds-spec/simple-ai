@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen bg-[#f8f9fa] overflow-hidden">
+    <div className="flex flex-col items-start gap-20 w-full min-h-screen bg-[#f1f3f6] overflow-hidden">
       <Navbar />
-      {/* <BuilderSection /> */}
+      <BuilderSection />
     </div>
   );
 }
