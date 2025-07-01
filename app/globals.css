@@ -10,6 +10,11 @@
   --color-foreground: var(--foreground);
   --font-inter: var(--font-inter);
   --font-roboto: var(--font-roboto);
+  --font-manrope: var(--font-manrope);
+  --font-grotesk-light: var(--font-grotesk-light);
+  --font-grotesk-regular: var(--font-grotesk-regular);
+  --font-grotesk-medium: var(--font-grotesk-medium);
+  --font-grotesk-bold: var(--font-grotesk-bold);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,4 +40,30 @@ body {
     1;
   border-width: 1px;
   border-style: solid;
+}
+
+.dot {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.cursor::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("/images/cursor.png") no-repeat center/contain;
 }

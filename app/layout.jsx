@@ -1,4 +1,5 @@
-import { Geist, Geist_Mono, Inter, Roboto_Mono } from "next/font/google";
+import { Inter, Manrope, Roboto_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,6 +11,27 @@ const roboto = Roboto_Mono({
   variable: "--font-roboto",
   subsets: ["latin"],
 });
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+});
+
+const groteskLight = localFont({
+  src: "../public/fonts/LabilGrotesk-Light.woff2",
+  variable: "--font-grotesk-light",
+});
+const groteskRegular = localFont({
+  src: "../public/fonts/LabilGrotesk-Regular.woff2",
+  variable: "--font-grotesk-regular",
+});
+const groteskMedium = localFont({
+  src: "../public/fonts/LabilGrotesk-Medium.woff2",
+  variable: "--font-grotesk-medium",
+});
+const groteskBold = localFont({
+  src: "../public/fonts/LabilGrotesk-Bold.woff2",
+  variable: "--font-grotesk-bold",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -19,7 +41,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${roboto.variable} antialiased`}>
+      <body
+        className={`${groteskLight.variable} ${groteskRegular.variable} ${groteskMedium.variable} ${groteskBold.variable} antialiased`}
+      >
         {children}
       </body>
     </html>
