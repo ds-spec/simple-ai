@@ -7,6 +7,7 @@ import AIEngineDashboard from "./AIEngine";
 
 export default function BuilderSection() {
   const [clientX, setClientX] = useState(0);
+  const [mouseArea,setMouseArea] = useState(false);
   const [clientY, setClientY] = useState(0);
   const avatars = [
     "avatar-01.jpg",
@@ -24,20 +25,22 @@ export default function BuilderSection() {
   };
 
   return (
-    <div className="w-full h-full px-36 cursor-none">
-      <div className="absolute inset-0 z-0 h-full w-full bg-[radial-gradient(#3846638c_1px,transparent_1px)] [background-size:16px_16px]" />
+    <div className="w-full h-full px-36 ">
       <section
         onMouseMove={(e) => handleCursorMovement(e)}
-        className="w-full min-h-[80vh] bg-[#141414] rounded-lg flex flex-col gap-6 px-8 py-12 z-10 relative "
+        onMouseLeave={() => setMouseArea(true)}
+        className="w-full bg-[#141414] rounded-lg flex flex-col gap-6 px-8 py-12 z-10 relative cursor-none"
       >
+        <div className="absolute inset-0 z-0 h-full w-full bg-[radial-gradient(#3846638c_1px,transparent_1px)] [background-size:16px_16px]" />
         <div
           style={{
+            display: mouseArea ? "none" : "block",
             position: "absolute",
             top: `${clientY}px`,
             left: `${clientX}px`,
             pointerEvents: "none",
           }}
-          className="cursor"
+          className="cursor absolute z-50"
         />
         <div className="flex z-10 w-full items-center gap-8 ">
           <div className="flex flex-col max-w-md gap-6 w-full">
