@@ -36,12 +36,6 @@ export default function Navbar() {
           >
             Docs
           </a>
-          {/* <a
-            className="text-white font-grotesk-bold text-md bg-[#060708] hover:bg-white hover:text-black px-2 py-1.5 font-normal"
-            href="#"
-          >
-            Extra
-          </a> */}
         </div>
 
         <div className="flex items-center gap-3">
