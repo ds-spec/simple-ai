@@ -1,4 +1,5 @@
 import BuilderSection from "@/components/BuilderSection";
+import LoadingScreen from "@/components/LoadingScreen";
 import Navbar from "@/components/Navbar";
 
 export default function Home() {

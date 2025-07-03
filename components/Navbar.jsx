@@ -39,10 +39,10 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <button className="bg-white border-[.5px] border-gray-100 px-3 py-1.5 rounded-lg text-sm text-black font-grotesk-medium cursor-pointer shadow-sm hover:bg-gray-50">
+          <button className="px-3 py-1.5 rounded-lg text-sm text-white font-grotesk-medium cursor-pointer border border-black shadow-sm hover:border hover:border-white transition-all duration-200 ease-in-out">
             Login
           </button>
-          <button className="bg-white px-3 py-1.5 rounded-lg text-sm text-black font-grotesk-medium cursor-pointer shadow-xs">
+          <button className="bg-white px-3 py-1.5 rounded-lg text-sm text-black hover:scale-105 transition-all duration-300 ease-out font-grotesk-medium cursor-pointer shadow-xs">
             Register
           </button>
         </div>

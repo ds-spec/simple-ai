@@ -15,6 +15,7 @@
   --font-grotesk-regular: var(--font-grotesk-regular);
   --font-grotesk-medium: var(--font-grotesk-medium);
   --font-grotesk-bold: var(--font-grotesk-bold);
+  --font-bitcount-grid: var(--font-bitcount-grid);
   --animate-rotate: rotate 10s linear infinite;
 }
 
