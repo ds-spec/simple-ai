@@ -1,6 +1,7 @@
 import BuilderSection from "@/components/BuilderSection";
 import LoadingScreen from "@/components/LoadingScreen";
 import Navbar from "@/components/Navbar";
+import NextGen from "@/components/NextGen";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     >
       <Navbar />
       <BuilderSection />
+      <NextGen />
     </div>
   );
 }
